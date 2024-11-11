@@ -1,0 +1,25 @@
+<h1>Lista de Tareas</h1>
+
+<% if flash[:notice] %>
+  <p class="notice"><%= flash[:notice] %></p>
+<% end %>
+
+<% if flash[:alert] %>
+  <p class="alert"><%= flash[:alert] %></p>
+<% end %>
+
+<%= link_to 'Nueva Tarea', new_task_path %>
+
+<ul>
+  <% @tasks.each do |task| %>
+    <li>
+      <strong><%= task.title %></strong> - <%= task.completed ? 'Completada' : 'Pendiente' %>
+      <%= link_to 'Mostrar', task_path(task) %> |
+      <%= link_to 'Editar', edit_task_path(task) %> |
+
+      <%= form_with url: task_path(task), method: :delete, data: { turbo_confirm: '¿Estás seguro?' }, local: false do %>
+        <%= submit_tag 'Eliminar', class: 'delete-task' %>
+      <% end %>
+    </li>
+  <% end %>
+</ul>

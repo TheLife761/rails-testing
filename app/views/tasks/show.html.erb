@@ -1,0 +1,9 @@
+<h1><%= @task.title %></h1>
+
+<p>Estado: <%= @task.completed ? 'Completada' : 'Pendiente' %></p>
+
+<%= link_to 'Editar', edit_task_path(@task) %> |
+<%= link_to 'Volver a la lista', tasks_path %>
+<p>
+  <%= link_to 'Eliminar Tarea', task_path(@task), method: :delete, data: { confirm: '¿Estás seguro?' } %>
+</p>

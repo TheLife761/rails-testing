@@ -1,0 +1,13 @@
+=> 
+[[32m#<Task:0x00007a81acd2f750[0m
+  id: [34m[1m2[0m,
+  title: [31m[1m"[0m[31mTarea de prueba[0m[31m[1m"[0m,
+  completed: [36m[1mfalse[0m,
+  created_at: Mon, 04 Nov 2024 13:33:21.762837000 UTC +00:00,
+  updated_at: Mon, 04 Nov 2024 13:33:21.762837000 UTC +00:00[32m>[0m,
+ [32m#<Task:0x00007a81acb1b400[0m
+  id: [34m[1m3[0m,
+  title: [31m[1m"[0m[31mTarea de prueba[0m[31m[1m"[0m,
+  completed: [36m[1mfalse[0m,
+  created_at: Mon, 04 Nov 2024 13:33:23.406525000 UTC +00:00,
+  updated_at: Mon, 04 Nov 2024 13:33:23.406525000 UTC +00:00[32m>[0m]
